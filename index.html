@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Column Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Excel Column Selector</h1>
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-input" accept=".csv, .xlsx" />
+        <button type="button" id="upload-button">Upload</button>
+    </form>
+    <div id="column-list"></div>
+    <button type="button" id="generate-button" style="display: none;">Generate Excel</button>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</html>
